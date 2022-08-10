@@ -5,9 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LuxSpace</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link href="css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="text-2xl font-bold text-red-900">Hallo</h1>
+    <!-- START: Header -->
+    <header class="absolute top-0 left-0 right-0 z-10 w-full px-4">
+      <div class="container flex py-2 mx-auto md:py-4">
+        <!-- START: Logo -->
+        <div class="flex items-center flex-auto">
+          <div class="flex items-center w-56">
+            <img src="images/design/logo.svg" alt="LuxSpace" />
+          </div>
+        </div>
+        <!-- END: Logo -->
+
+        <!-- START: Menu -->
+        <div class="flex items-center justify-center w-auto">
+          <ul class="fixed inset-0 flex-col invisible text-black capitalize opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex">
+            <li class="py-6 mx-3 md:py-0 hover:underline hover:text-white">
+              <a href="">showcase</a>
+            </li>
+            <li class="py-6 mx-3 md:py-0 hover:underline hover:text-white">
+              <a href="">catalog</a>
+            </li>
+            <li class="py-6 mx-3 md:py-0 hover:underline hover:text-white">
+              <a href="">delivery</a>
+            </li>
+            <li class="py-6 mx-3 md:py-0 hover:underline hover:text-white">
+              <a href="">rewards</a>
+            </li>
+          </ul>
+        </div>
+        <!-- END: Menu -->
+
+        <!-- START: Hamburger {display: sm} -->
+        <div class="flex items-center justify-center w-auto">
+          <ul class="flex items-center justify-items-center">
+            <li class="block mx-3 md:py-0 md:hidden">
+              <button id="menu-toggler" class="relative z-10 flex items-center justify-center w-8 h-8 text-black hover:text-white md:focus:outline-none">
+                <img src="images/menu-hamburger.svg" alt="Hamburger" />
+              </button>
+            </li>
+            <li class="mx-3 md:py-0">
+              <a href="" id="menu-toggler" class="relative z-10 flex items-center justify-center w-8 h-8 text-black hover:text-white md:focus:outline-none">
+                <img src="images/cart.svg" alt="Cart" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- END: Hamburger {display: sm} -->
+      </div>
+    </header>
+    <!-- END: Header -->
   </body>
 </html>
